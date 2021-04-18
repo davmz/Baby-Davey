@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body
+{
+    background-color:rgba(67, 77, 95, 0.801);
+    /* height: 90%; */
+}
+
+header
+{
+    background-color: rgb(67, 77, 95, 1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    padding: 30px 18%;
+}
+    .logo
+    {
+        cursor: context-menu;
+        margin-right: auto;
+    }
+
+        .logo h3
+        {
+            color: #EDF0F1;
+            font-family: 'Poppins', sans-serif;
+            font-size: 26px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 10px #000;
+        }
+
+    .navLinks
+    {
+        list-style: none;
+    }
+
+        .navLinks li
+        {
+            display: inline-block;
+            padding: 0 20px;
+        }
+
+        .navLinks li a
+        {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            text-decoration: none;
+            transition: all 0.3s ease 0s;
+            color: rgba(252, 252, 252, 0.87);
+            text-shadow: 1px 1px 5px #000;
+        }
+
+        .navLinks li a:hover
+        {
+            text-shadow: 1px 1px 5px rgb(255, 255, 255);
+            color: #ffffff;
+        }
+
+    .cta
+    {
+        margin-left: 20px;
+    }
+
+        button
+        {
+            padding: 9px 25px;
+            background-color: rgba(0, 136, 169, 1);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            color: white;
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+        }
+
+            button:hover
+            {
+                background-color: rgba(0, 136, 169, 0.8);
+            }
+
+#content
+{
+    padding: 45px 300px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: calc(100vh - 100px - 150px);
+}
+
+#footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.397);
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 45px 150px;
+    height: 150px;
+}
+
+    .copyRight p
+    {
+        font-size: 18px;
+        max-width: 250px;
+        text-shadow: 1px 1px 5px #000;
+    }
+
+    .socialMedia
+    {
+        min-width: 450px;
+    }
+
+        .socialMedia ul
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .socialMedia ul li
+            {
+                padding: 0 5px;
+                list-style: none;
+            }
+
+                .socialMedia ul li a
+                {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 18px;
+                    font-family: "Poppins", sans-serif;
+                    text-shadow: 3px 3px 5px #000;
+                    transition: 0.2s ease-in 0s;
+                }
+
+                .socialMedia ul li a:hover
+                {
+                    text-shadow: 1px 1px 12px #ecdfdf;
+                    color: #f0ebeb;
+                }
+
+@media screen and (max-width: 1114px)
+{
+    header
+    {
+        width: 100%;
+        padding: 15px 11%;
+    }
+
+        .logo h3
+        {
+            font-size: 22px;
+        }
+
+        nav .navLinks li a
+        {
+            font-size: 16px;
+        }
+
+        a button
+        {
+            font-size: 16px;
+        }
+    
+    #footer
+    {
+        justify-content: space-around;
+        height: 110px;
+        padding: 30px 10px;
+    }
+
+        .copyRight p
+        {
+            font-size: 16px;
+        }
+            .socialMedia ul
+            {
+                justify-content: space-evenly;
+                max-width: 450px;
+            }
+                .socialMedia ul li a
+                {
+                    font-size: 16px;
+                }
+}
+
+@media screen and (max-width: 870px)
+{
+    header
+    {
+        width: 100%;
+        padding: 10px 8%;
+    }
+
+    .logo h3
+    {
+        font-size: 18px;
+    }
+
+    nav .navLinks li a
+    {
+        font-size: 14px;
+    }
+    
+    a button
+    {
+        font-size: 14px;
+    }
+
+    #footer
+    {
+        height: 90px;
+        padding: 15px 0;
+    }
+
+        .copyRight
+        {
+            max-width: 172px;
+        }
+
+            .copyRight p
+            {
+                font-size: 13px;
+            }
+
+        .socialMedia ul li a
+        {
+            font-size: 14px;
+        }
+}

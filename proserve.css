@@ -1,0 +1,766 @@
+#miniHeader
+{
+    height: 600px;
+    background-image: url("images/services.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    opacity: 0.77;
+    display: none;
+}
+
+#content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#434D5F, #e6646485, #9dcf8973, #9198e567, #2D323D);
+}
+
+    #main
+    {
+        box-shadow: 1px 1px 2px #222;
+        padding: 15px 80px;
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        border-radius: 6px;
+        border: none;
+    }
+
+    h1
+    {
+        margin: 7px 0 5px 0;
+        color: black;
+        position: relative;
+    }
+
+        h1::before
+        {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 100px;
+            background: #434D5F;
+        }
+
+    .subcontent
+    {
+        color: black;
+        display: flex;
+        height: 100%;
+        width: 1250px;
+        justify-content: space-between;
+        background-color: white;
+        padding: 20px 30px;
+        margin-top: 20px;
+        border-radius: 7px;
+        border: 3px solid rgba(65, 67, 73, 0.349);
+    }
+
+    .subcontent:last-child
+    {
+        margin-bottom: 20px;
+    }
+
+        .subcontent:hover
+        {
+            box-shadow: 1px 1px 8px #3b92a8;
+            transition: 0.2s ease-in;
+        }
+
+        .services
+        {
+            width: 100%;
+            margin-right: 50px;
+        }
+
+            .services h2
+            {
+                text-transform: uppercase;
+                letter-spacing: 1.2px;
+            }
+
+            .services img
+            {
+                padding: 25px 0 0 0;
+                width: 525px;
+            }
+        
+        .subcontent .description
+        {
+            font-size: 20px;
+        }
+
+            #map
+            {
+                color: #3b92a8;
+                text-decoration: none;
+                font-weight: 500;
+            }
+
+            .download
+            {
+                margin-top: 15px;
+            }
+
+                .download li
+                {
+                    display: inline-block;
+                    justify-content: center;
+                    align-items: center;
+                    list-style: none;
+                    width: 35%;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    border: 1px solid white;
+                    margin: 10px 15px 0 0;
+                    background-color: black;
+                    padding: 10px;
+                }
+
+                    .download li:hover
+                    {
+                        transition: 0.2s linear;
+                    }
+
+                    .download li:first-of-type:hover
+                    {
+                        box-shadow: 1px 1px 10px rgb(115, 230, 115);
+                        background-color: white;
+                        border: 1px solid #eee;
+                    }
+
+                    .download li:last-of-type:hover
+                    {
+                        box-shadow: 1px 1px 10px rgb(128, 0, 0);
+                        background-color: white;
+                        border: 1px solid #eee;
+                    }
+
+                    .download li a
+                    {
+                        text-decoration: none;
+                    }
+
+                    .download li .android
+                    {
+                        color: rgb(115, 230, 115);
+                    }
+
+                        .download li .android:hover
+                        {
+                            color: rgb(85, 221, 85);
+                        }
+
+                    .download li .apple
+                    {
+                        color: rgb(230, 115, 115);
+                    }    
+
+                        .download li .apple:hover
+                        {
+                            color: rgb(230, 115, 115);
+                        }
+
+                        .download li a .device
+                        {
+                            display: flex;
+                        }
+                        
+                            i
+                            {
+                                padding: 5px 10px;
+                            }
+
+                            span
+                            {
+                                padding: 5px 10px;
+                                font-size: 15px;
+                                font-weight: 600;
+                            }
+
+        .subcontent .description .viewMore
+        {
+            margin-top: 40px;
+        }
+
+            .subcontent .description .viewMore a
+            {
+                padding: 15px 15px;
+                width: 300px;
+                background-color: rgb(80, 117, 219);
+                text-decoration: none;
+                color: #eee;
+            }
+
+                .subcontent .description .viewMore a:hover
+                {
+                    transition: 0.2s linear;
+                    background-color: rgb(40, 83, 201);
+                }
+
+        /* Tutoring */
+        #tutor .description
+        {
+            padding: 100px 0 0 0;
+        }
+
+        /* DayCare */
+        #dayCare .description
+        {
+            padding: 60px 0 0 0;
+        }
+
+        /* Virtual Shop */
+        #virtual .description
+        {
+            padding: 90px 0 0 0;
+        }
+
+        #restaurant .description
+        {
+            padding: 75px 0 0 0;
+        }
+
+            #fastFood
+            {
+                margin-top: 30px;
+            }
+
+                #fastFood li
+                {
+                    display: inline-block;
+                }
+
+                #fastFood li:first-child
+                {
+                    margin-right: 20px;
+                }
+
+                    #fastFood li img
+                    {
+                        padding: 10px 10px;
+                        width: 120px;
+                        height: 60px;
+                        box-shadow: 1px 1px 3px black;
+                        border-radius: 5px;
+                    }
+
+                        #fastFood li img:hover
+                        {
+                            transition: 0.3s linear;
+                            background-color: #eee;
+                            box-shadow: 1px 1px 5px #000;
+                        }
+
+@media screen and (max-width: 1440px)
+{
+    #main
+    {
+        padding: 25px 25px;
+    }
+
+        #main h1
+        {
+            font-size: 26px;
+        }
+
+        .subcontent
+        {
+            width: 1200px;
+        }
+
+            .subcontent .description .download
+            {
+                width: 580px;
+                height: 100px;
+            }
+
+                .subcontent .description .download li a div span
+                {
+                    font-size: 14px;
+                }
+    
+        #curb .description
+        {
+            padding: 25px 0 0 0;
+            height: 290px;
+        }
+
+        #virtual .description
+        {
+            padding: 70px 0 0 0;
+            height: 410px;
+        }
+
+        #restaurant .description
+        {
+            padding: 60px 0 0 0;
+            height: 410px;
+        }
+}
+
+@media screen and (max-width: 1280px)
+{
+    #main
+    {
+        padding: 22px 22px;
+    }
+
+        .subcontent
+        {
+            width: 1060px;
+        }
+
+            .subcontent h2
+            {
+                font-size: 20px;
+            }
+
+            .subcontent img
+            {
+                width: 380px;
+            }
+
+            .subcontent .description
+            {
+                font-size: 18px;
+                padding: 0;
+            }
+
+                .subcontent .description .download
+                {
+                    width: 490px;
+                    height: 160px;
+                }
+
+                    .subcontent .description .download li
+                    {
+                        padding: 5px;
+                    }
+
+                    .subcontent .description .download li a div i
+                    {
+                        padding: 2px;
+                    }
+
+                        .subcontent .description .download li a div span
+                        {
+                            font-size: 13px;
+                        }
+        #curb .description
+        {
+            padding: 5px 0 0 0;
+            height: 310px;
+        }
+
+        #tutor .description
+        {
+            padding: 45px 0 0 0;
+            height: 310px;
+        }
+
+        #dayCare .description
+        {
+            padding: 30px 0 0 0;
+            height: 310px;
+        }
+
+        #virtual .description
+        {
+            padding: 25px 0 0 0;
+            height: 310px;
+        }
+
+        #restaurant .description
+        {
+            padding: 25px 0 0 0;
+            height: 310px;
+        }
+
+        .subcontent .viewMore
+        {
+            width: 600px;
+        }
+
+            .subcontent .viewMore a
+            {
+                font-size: 16px;
+            }
+}
+
+
+@media screen and (max-width: 1110px)
+{
+    #main
+    {
+        padding: 20px 20px;
+    }
+
+        #main h1
+        {
+            font-size: 24px;
+        }
+
+        .subcontent
+        {
+            width: 890px;
+        }
+
+            .subcontent h2
+            {
+                font-size: 18px;
+            }
+
+            .subcontent img
+            {
+                width: 340px;
+            }
+
+            .subcontent .description
+            {
+                height: 330px;
+                font-size: 16px;
+                padding: 0;
+            }
+
+                .subcontent .description .download
+                {
+                    width: 450px;
+                    height: 120px;
+                }
+
+                    .subcontent .description .download li
+                    {
+                        padding: 5px;
+                    }
+
+                    .subcontent .description .download li a div i
+                    {
+                        padding: 2px;
+                    }
+
+                        .subcontent .description .download li a div span
+                        {
+                            font-size: 10px;
+                        }
+    
+        #curb .description
+        {
+            padding: 0;
+            height: 290px;
+        }
+
+        #tutor .description
+        {
+            padding: 35px 0 0 0;
+            height: 260px;
+        }
+
+        #dayCare .description
+        {
+            padding: 25px 0 0 0;
+            height: 280px;
+        }
+
+        #virtual .description
+        {
+            padding: 25px 0 0 0;
+            height: 280px;
+        }
+
+        #restaurant .description
+        {
+            padding: 15px 0 0 0;
+            height: 290px;
+        }
+
+                #restaurant .description #fastFood li a img
+                {
+                    width: 95px;
+                    height: 50px;
+                } 
+
+        .subcontent .viewMore
+        {
+            width: 200px;
+        }
+
+            .subcontent .viewMore a
+            {
+                font-size: 12px;
+            }
+}
+
+@media screen and (max-width: 960px)
+{
+    #main
+    {
+        padding: 10px 15px;
+    }
+
+        #main h1
+        {
+            font-size: 22px;
+        }
+
+        .subcontent
+        {
+            width: 820px;
+        }
+
+        .subcontent h2
+        {
+            font-size: 17px;
+        }
+
+        .subcontent img
+        {
+            width: 300px;
+        }
+
+        .subcontent .description
+        {
+            height: 330px;
+            font-size: 14px;
+        }
+
+            .subcontent .description span
+            {
+                font-size: 12px;
+            }
+
+            .subcontent .description .download
+            {
+                width: 365px;
+                height: 110px;
+            }
+
+                    .subcontent .description .download li a div span
+                    {
+                        font-size: 9px;
+                    }
+
+        #curb .description
+        {
+            padding: 15px 0 0 0;
+            height: 255px;
+        }
+
+        #tutor .description
+        {
+            padding: 55px 0 0 0;
+            height: 255px;
+        }
+
+        #dayCare .description
+        {
+            padding: 25px 0 0 0;
+            height: 255px;
+        }
+
+        #virtual .description
+        {
+            padding: 25px 0 0 0;
+            height: 255px;
+        }
+
+        #restaurant .description
+        {
+            padding: 15px 0 0 0;
+            height: 255px;
+        }
+
+            #restaurant .description #fastFood li a img
+            {
+                width: 85px;
+                height: 45px;
+            } 
+
+        .subcontent .viewMore
+        {
+            width: 190px;
+        }
+
+            .subcontent .viewMore a
+            {
+                font-size: 12px;
+            }
+}
+
+@media screen and (max-width: 876px)
+{
+    #main
+    {
+        padding: 10px 10px;
+    }
+
+        #main h1
+        {
+            font-size: 22px;
+        }
+
+        .subcontent
+        {
+            width: 740px;
+        }
+
+            .subcontent h2
+            {
+                font-size: 15px;
+            }
+
+            .subcontent img
+            {
+                width: 285px;
+            }
+
+            .subcontent .description
+            {
+                font-size: 13px;
+                padding: 0;
+            }
+
+                .subcontent .description .download
+                {
+                    margin-top: 0;
+                    width: 345px;
+                    height: 100px;
+                }
+
+                    .subcontent .description .download li
+                    {
+                        padding: 2px;
+                    }
+
+                    .subcontent .description .download li a div i
+                    {
+                        padding: 1px;
+                    }
+
+                        .subcontent .description .download li a div span
+                        {
+                            font-size: 9px;
+                        }
+
+        #curb .description
+        {
+            padding: 15px 0 0 0;
+            height: 240px;
+        }
+
+        #tutor .description
+        {
+            padding: 20px 0 0 0;
+            height: 240px;
+        }
+
+        #dayCare .description
+        {
+            padding: 20px 0 0 0;
+            height: 240px;
+        }
+
+        #virtual .description
+        {
+            padding: 25px 0 0 0;
+            height: 240px;
+        }
+
+        #restaurant .description
+        {
+            padding: 15px 0 0 0;
+            height: 240px;
+        }
+
+            #restaurant .description #fastFood li a img
+            {
+                width: 75px;
+                height: 40px;
+            } 
+
+        .subcontent .viewMore
+        {
+            width: 160px;
+        }
+
+            .subcontent .viewMore a
+            {
+                font-size: 10px;
+            }
+}
+
+@media screen and (max-width: 768px)
+{
+    #main
+    {
+        padding: 10px 10px;
+        width: 700px;
+    }
+
+        #main h1
+        {
+            font-size: 20px;
+        }
+
+        .subcontent
+        {
+            width: 670px;
+        }
+
+        .subcontent img
+        {
+            width: 250px;
+        }
+
+        .subcontent .description
+        {
+            height: 330px;
+            background-color: orange;
+            font-size: 11px;
+        }
+
+            .subcontent .description span
+            {
+                font-size: 11px;
+            }
+
+        #curb .description
+        {
+            width: 300px;
+            padding: 20px 0 0 0;
+            height: 215px;
+        }
+
+        #tutor .description
+        {
+            padding: 35px 0 0 0;
+            height: 215px;
+        }
+
+        #dayCare .description
+        {
+            padding: 20px 0 0 0;
+            height: 215px;
+        }
+
+        #virtual .services h2
+        {
+            font-size: 14px;
+        }
+
+        #virtual .description
+        {
+            width: 300px;
+            padding: 25px 0 0 0;
+            height: 215px;
+        }
+
+        #restaurant .description
+        {
+            padding: 15px 0 0 0;
+            height: 215px;
+        }
+}
