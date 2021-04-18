@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Baby Davey's</title>
+        <script type="text/javascript" src="contact.js"></script>
+        <link rel="stylesheet" href="contacts.css">
+        <link rel="stylesheet" href="layout.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <h3>Baby Davey's</h3>
+            </div>
+            
+            <nav>
+                <ul class="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="proserve.html">Products & Services</a></li>
+                </ul>
+            </nav>
+
+            <a href="contacts.html" class="cta"><button>Contacts</button></a>
+        </header>
+
+        <div id="content">
+            <div id="main">
+                <div class="title">Contacts</div>
+                <form action="https://formspree.io/f/mjvjkbny" method="POST" id="contactForm">
+                    <div class="userDetails">
+                        <div class="inputBox">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" autofocus="autofocus">
+                            <div class="error" id="nameRequired">*Please enter your full name</div>
+                        </div>
+                        <div class="inputBox">
+                            <label for="number">Phone Number</label>
+                            <input type="tel" id="number" placeholder="Enter your number" >
+                            <div class="error" id="numberRequired">*Please enter your number</div>
+                            <div class="error" id="numberError">*Must be a 10 digit number</div>
+                        </div>
+                    </div>
+
+                    <div class="emailBox">
+                        <label for="email">Email</label>
+                        <input class="widerInput" id="email" type="text" placeholder="Enter your email" >                    
+                        <div class="error" id="emailRequired">*Please enter your email</div>
+                        <div class="error" id="emailError">*Invalid email address</div>
+                    </div>
+                    <div class="messageBox">
+                        <label for="message">Message</label>
+                        <textarea class="widerInput" id="message" name="message" id="message" placeholder="Enter your message" ></textarea>
+                        <div class="error" id="messageRequired">*Please enter a message</div>
+                    </div>
+    
+                    <div class="button">
+                        <input type="submit">
+                        <input type="reset">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="copyRight">
+                <p>Designed & Developed by David Montañez &#169; 2021</p>
+            </div>
+
+            <div class="socialMedia">
+                <ul>
+                    <li><a href="https://www.facebook.com/davey.bob.52" target="_blank">Facebook</a></li>    
+                    <li><a href="mailto:babydavey2002@gmail.com.de">Email</a></li>
+                    <li><a href="https://twitter.com/home" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/babydavey02/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
