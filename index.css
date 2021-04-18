@@ -1,0 +1,179 @@
+#miniHeader
+{
+    height: 490px;
+    background-image: url("images/toyShelf.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    opacity: 0.75;
+    display: none;
+}
+
+#content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#434D5F, #e6646485, #9dcf8973, #9198e567, #2D323D);
+}
+
+    #main
+    {
+        box-shadow: 1px 1px 2px #222;
+        padding: 40px 80px;
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        max-width: 1700px;
+        border-radius: 6px;
+        border: none;
+    }
+
+        #companyIntro
+        {
+            border-radius: 10px;
+            display: flex;
+            padding: 25px 30px;
+            background: #737a8a;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+
+            #companyIntro #owner
+            {
+                margin-right: 50px;
+            }
+
+                #companyIntro #owner fieldset
+                {
+                    margin-top: 10px;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 24px;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    border: 2px solid;
+                }
+
+                #companyIntro #owner img
+                {
+                    border: 10px solid #fff;
+                    border-radius: 50%;
+                    max-width: 430px;
+                }
+
+            #companyIntro #biography
+            {
+                width: 100%;
+                font-size: 22px;
+                padding: 40px 0 0 0;
+            }
+
+        #teamWelcome
+        {
+            border-radius: 8px;
+            color: black;
+            margin-top: 50px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        #aboutCompany img
+        {
+            height: 90%;
+            width: 100%;
+        }
+
+@media screen and (max-width: 1110px)
+{
+    #main
+    {
+        padding: 20px 20px;
+    }
+
+        #companyIntro
+        {
+            width: 900px;
+        }
+
+            #companyIntro #owner img
+            {
+                max-width: 250px;
+            }
+
+            #companyIntro #owner fieldset
+            {
+                font-size: 16px;
+            }
+
+            #companyIntro #biography
+            {
+                padding: 23px 0 0 0;
+                font-size: 16px;
+            }
+
+    #teamWelcome
+    {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 870px)
+{
+    #main
+    {
+        padding: 20px 20px;
+    }
+
+        #companyIntro
+        {
+            width: 730px;
+        }
+
+            #companyIntro #owner img
+            {
+                max-width: 170px;
+            }            
+
+            #companyIntro #owner fieldset
+            {
+                font-size: 12px;
+            }
+
+            #companyIntro #biography
+            {
+                padding: 23px 0 0 0;
+                font-size: 12px;
+            }
+
+    #teamWelcome
+    {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    #companyIntro
+    {
+        width: 620px;
+        margin-bottom: 20px;
+    }
+
+        #companyIntro #biography
+        {
+            padding: 0;
+            font-size: 12px;
+        }
+
+    #teamWelcome
+    {
+        margin-top: 20px;
+    }    
+}
